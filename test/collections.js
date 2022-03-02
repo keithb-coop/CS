@@ -1,6 +1,6 @@
 var assert = require('assert')
 var sll = require('../src/list')
-
+const { performance } = require('perf_hooks')
 const { expect } = require('chai')
     
 describe('collections', () => {
@@ -9,6 +9,10 @@ describe('collections', () => {
             describe('in an array', () => {
                 it('finds the right one', () => {
                     const list = ["zero", "one", "two"]
+                    const t0 = performance.now();
+                    list[1]
+                    const t1 = performance.now();
+                    console.log(`Call to look up list index took ${t1 - t0} milliseconds.`);
                     expect(list[1]).to.equal("one")
                 })
             })
