@@ -1,0 +1,21 @@
+{
+  "name": "code-club",
+  "version": "0.0.1",
+  "description": "CS for the non-CS people",
+  "main": "index.js",
+  "directories": {
+    "test": "test",
+    "src": "src"
+  },
+  "dependencies": {
+    "chai": "^4.3.4"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Keith Braithwaite",
+  "license": "GPL-3.0-or-later"
+}
